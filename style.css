@@ -1,0 +1,355 @@
+body{
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* Loader */
+#myloader{
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+/* Showcase */
+#myshowcase .cover{
+    filter: brightness(0.2);
+    height: 100vh;
+    width: 100%;
+    object-fit: cover !important;
+}
+
+#myshowcase .navbar{
+    position: fixed;
+    z-index: 10000;
+}
+
+#myshowcase .navbar-brand{
+    color: white;
+    font-size: 1.5rem;
+}
+
+#myshowcase .mydropdownex{
+    position: absolute;
+    font-size: 1.2rem;
+    top: 12px;
+    right: 8px;
+}
+
+#myshowcase .mydropdownex li{
+    color: white;
+    list-style: none;
+    display: inline;
+    margin: 0 12px 0 12px;
+}
+
+#myshowcase .mydropdownex ul{
+    padding: 0;
+    margin: 0;
+}
+
+#myshowcase .mydropdownex a , #myshowcase .mydropdown a{
+    text-decoration: none;
+    color: white;
+}
+
+#myshowcase .mydropdown{
+    display: none;
+    font-size: 1.15rem;
+    height: 100%;
+    padding-right: 18px;
+    width: 30%;
+}
+
+#myshowcase .mydropdown li:active{
+    font-weight: bold;
+}
+
+#myshowcase .mydropbtn{
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: white;
+}
+
+
+@media(max-width : 768px){
+    #myshowcase .mydropdown{
+        position: fixed;
+        top: 60px;
+        right:0;
+        background-color: rgba(0, 0, 0, 0.9);
+        text-align: right;
+    }
+    #myshowcase .mydropdown li{
+        list-style: none;
+        display: block;
+        margin: 0 0 6px 0;
+    }
+    #myshowcase .mydropdownex{
+        display: none;
+    }
+}
+
+@media(min-width : 768px){
+    #myshowcase .mydropbtn{
+        display: none;
+    }
+}
+
+.mycontent{
+    position: absolute;
+    top: 40%;
+    color: white;
+}
+
+.mysearch{
+    background-color: white;
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 6px;
+    font-size: 1.115rem;
+    padding: 8px 0 8px 0;
+}
+
+.mysearch input{
+    width: 83%;
+    border: 0px solid white;
+    outline: none;
+    padding-left: 7px;
+}
+
+.mysearch #mysearchbtn{
+    padding: 0;
+    background-color: white;
+    border: 0px solid white;
+}
+
+.mysearch #mysearchbtn:hover{
+    color: rgb(65, 65, 65);
+}
+
+.mysearch #myclearbtn i{
+    display: none;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.mysearch #myclearbtn{
+    background-color: white;
+    border: 0px solid white;
+}
+
+.mysearch #myclearbtn i:hover{
+    color: rgb(65, 65, 65);
+}
+
+@media(max-width:768px){
+    .mysearch{
+        width: 75%;
+    }
+}
+
+/* Footer */
+.myfooter{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 30px 50px 40px 50px;
+}
+
+.myfooter textarea{
+    width: 40%;
+    height: 80px;
+    border-width:0px ;
+    border-radius: 6px;
+    outline: none;
+}
+
+#mymsg button{
+    background-color: rgb(75, 75, 75);
+    padding: 3px 15px 3px 15px;
+    border: 2px solid black;
+    border-radius: 4px;
+    outline: none;
+    font-size: 1.1rem;
+    color: white;
+}
+
+@media(max-width:768px){
+    .myfooter textarea{
+        width: 80%;
+    }
+    #mymsg button{
+        width: 80%;
+    }
+}
+
+#mymsg button:hover{
+    background-color: rgb(36, 36, 36);
+    color: rgb(204, 204, 204);
+}
+
+#mysociallinks h3{
+    display: inline;
+    margin: 2px 7px 3px 7px;
+}
+
+#mysociallinks a{
+    text-decoration: none;
+    color: white;
+}
+
+#mysociallinks a:hover{
+    color: grey;
+}
+
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: black;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border:0px solid black ;
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(195, 195, 195);
+  }
+
+ /* Container */
+#mycontainer{
+      background-color: black;
+      color: white;
+}
+
+.mypost{
+    background-color: rgb(41, 41, 41);
+    border-radius: 8px;
+    color: rgb(216, 216, 216);
+}
+
+.mypost img{
+    border-radius: 8px 8px 0 0;
+    z-index: 7500;
+}
+
+.mypost img:hover {
+    z-index: 1000;
+}
+.mypostcaption:hover{
+    z-index: 7600;
+}
+
+.mypost a{
+    text-decoration: none;
+    padding: 2px 5px 2px 5px;
+    border-radius: 4px;
+    margin: 1px 3px 1px 3px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: rgb(77, 77, 77);
+    box-shadow: 1px 1px 1px rgb(29, 29, 29) ,
+                -1px -1px 1px rgb(29, 29, 29);
+}
+
+.mypost a:hover{
+    background-color:rgb(12, 12, 12) ;
+}
+
+.mypostcaption {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    z-index: 7400;
+}
+
+.mypostcaption div{
+    width: 70%;
+    position:absolute;
+    margin: auto !important;
+    padding: auto;
+}
+
+.mypostcaption a{
+    text-decoration: none;
+    color: white;
+    background:none;
+    border: none;
+    box-shadow: none;
+}
+
+/* Sort button menu */
+#mysorter{
+    text-decoration: none;
+    color: rgb(179, 179, 179);
+}
+
+#mysorter h2{
+    background-color: rgb(49, 49, 49);
+    display: inline;
+    padding: 1px 5px 1px 5px;
+    border: 1px solid rgb(49, 49, 49);
+    border-radius: 8px;
+}
+
+#mysorter h2:hover{
+    background-color: rgb(88, 88, 88);
+    color: rgb(209, 209, 209);
+}
+
+#mysortmenu {
+    font-size: 1.6rem;
+    position: absolute;
+    z-index: 9000;
+    margin-top: 6px;
+    display: none;
+}
+#mysortmenu ul{
+    background-color: rgb(49, 49, 49);
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    border-radius: 0 0 6px 6px;
+    list-style: none;
+}
+
+#mysortmenu li{
+    width: 100%;
+    padding: 2px 8px 2px 8px;
+}
+
+#mysortmenu li:last-child{
+    border-radius: 0 0 6px 6px;
+}
+
+#mysortmenu a{
+    text-decoration: none;
+    color: rgb(179, 179, 179);
+    display: block;
+}
+
+#mysortmenu li:hover , #mysortmenu a:hover{
+    background-color: rgb(88, 88, 88);
+    color: rgb(209, 209, 209);
+}
