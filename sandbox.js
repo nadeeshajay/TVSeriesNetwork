@@ -7,18 +7,16 @@ $("#myshowcase .mydropdownex a").mouseleave(function() {
     $(this).animate({fontSize: "1.2rem" , fontWeight:"300"} , 200);
 });
 
-$("#myshowcase .mydropbtn").click(function(event) {
-    $("#myshowcase .mydropdown").fadeToggle(400);
+//Dropdown slider in mobile
+$(".mydropbtn").click(function(event){
+    $(".mydropdown").fadeToggle(400);
     event.preventDefault();
 });
 
-// $(function(){
-//     if ($("#myshowcase .mydropdown").css({"display":""})) {
-//         $(window).click(function() {
-//             $("#myshowcase .mydropdown").fadeOut(400);
-//         });
-//     }
-// });
+$( window ).resize(function() {
+    $(".mydropdown").hide(1);
+    $("#mysortmenu").hide(1);
+});
 
 // Search bar options
 $(".mysearch input").keyup(function(){
@@ -48,20 +46,23 @@ $(window).scroll(function(event) {
 });
 
 //Post image hover effect
+$(".mypost").mouseenter(function(){
+    $(function(event){
+        var h = $(".mypostimg img").height();
+        $(".mypostcaption").height(h);
+        event.preventDefault();
+    });
+});
+
 $(".mypostimg img").mouseenter(function() {
     $(this).css({"filter":"brightness(0.3)"});
+    $(".mypostcaption div").fadeIn(1);
 });
 
 $(".mypostcaption").mouseleave(function() {
     $(".mypostimg img").css({"filter":"brightness(1)"});
 });
 
-//Setting the caption division height to the height of the picture
-$(function(event){
-    var h = $(".mypostimg img").height();
-    $(".mypostcaption").height(h);
-    event.preventDefault();
-});
 
 //Sort button functions
 $(function(event){

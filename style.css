@@ -102,6 +102,12 @@ body{
     }
 }
 
+@media(width : 768px){
+    #myshowcase .mydropbtn{
+        display: flex;
+    }
+}
+
 .mycontent{
     position: absolute;
     top: 40%;
@@ -250,6 +256,7 @@ body{
 
 .mypost img:hover {
     z-index: 1000;
+    filter: brightness(0.4);
 }
 .mypostcaption:hover{
     z-index: 7600;
@@ -285,6 +292,7 @@ body{
 }
 
 .mypostcaption div{
+    display: none;
     width: 70%;
     position:absolute;
     margin: auto !important;
@@ -352,4 +360,10 @@ body{
 #mysortmenu li:hover , #mysortmenu a:hover{
     background-color: rgb(88, 88, 88);
     color: rgb(209, 209, 209);
+}
+
+/* Ads Section */
+.myads div{
+    width: 100%;
+    background-color: rgb(77, 77, 77);
 }
