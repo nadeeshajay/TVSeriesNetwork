@@ -262,6 +262,12 @@ body{
     z-index: 7600;
 }
 
+@media(max-width:768px){
+    .mypostcaption{
+    display:none !important;
+    }
+}
+
 .mypost a{
     text-decoration: none;
     padding: 2px 5px 2px 5px;
