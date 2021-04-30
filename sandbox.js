@@ -63,12 +63,6 @@ $(function(event){
     event.preventDefault();
 });
 
-// Window auto refresh on resize
-window.onresize = function(event)
-{
-document.location.reload(true);
-}
-
 //Sort button functions
 $(function(event){
     var l = $(".sortby").width();
